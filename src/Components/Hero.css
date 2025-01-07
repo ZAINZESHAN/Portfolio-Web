@@ -1,0 +1,14 @@
+.border-animation {
+    position: relative;
+    border: 5px solid #00cc7a; /* Base color for the border */
+    animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px 15px rgba(76, 175, 80, 0.2);
+    }
+}

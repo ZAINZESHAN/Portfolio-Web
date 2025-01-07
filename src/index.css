@@ -9,6 +9,25 @@
 }
 
 body{
-    /* background-color: #1c1c22; */
-    background-color: black;
+    @apply font-jetBrains
 }
+
+.hover{
+    position: relative;
+}
+
+.hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #00cc7a;
+    transition: all ease 1s;
+}
+
+.hover:focus::after{
+    width: 100%;
+}
+

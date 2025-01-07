@@ -14,7 +14,8 @@ export default {
       fontFamily: {
         Jost: ['Jost', 'sans-serif'],
         Viga: ['Viga', 'sans-serif'],
-        Strait: ['Strait', 'sans-serif']
+        Strait: ['Strait', 'sans-serif'],
+        jetBrains: ['JetBrains Mono', 'monospace'], // Define JetBrains Mono here
       },
       colors: {
         primary: '#1c1c22',
