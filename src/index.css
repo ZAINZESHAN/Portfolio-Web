@@ -2,15 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    @apply font-jetBrains
+body {
+    @apply font-jetBrains; /* Ensure this class is defined in your Tailwind config */
 }
 
+input,
+textarea {
+    @apply text-sm; /* Apply a base font size if needed */
+}
 
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px; /* Base placeholder font size */
+}
 
+@media (max-width: 1180px) {
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 14px; /* Larger placeholder font size for smaller screens */
+    }
+}
+
+/* Placeholder size for screens larger than lg (1024px) */
+@media (min-width: 1180px) {
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 17px; /* Placeholder font size for larger screens */
+    }
+}
