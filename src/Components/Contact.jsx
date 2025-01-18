@@ -10,7 +10,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section id='contact' className='bg-black h-auto'>
+        <section id='contact' className='bg-black h-auto border-b'>
             <div className="container text-center h-auto py-10">
                 <h1 className='font-Viga text-white text-[30px] md:text-[40px] lg:text-[32px] xl:text-[50px] pb-6 md:pb-10 xl:pb-16'>
                     Contact Me

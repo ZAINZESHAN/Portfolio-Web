@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+
+html{
+  @apply overflow-x-hidden scroll-smooth;
+}
+
 body {
     @apply font-jetBrains; /* Ensure this class is defined in your Tailwind config */
 }
@@ -35,4 +40,13 @@ textarea::placeholder {
     textarea::placeholder {
         font-size: 17px; /* Placeholder font size for larger screens */
     }
+}
+
+.link {
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.link:hover,
+.link.active {
+    color: #00e187; /* Use your accent color */
 }

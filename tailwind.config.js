@@ -16,6 +16,7 @@ export default {
         Viga: ['Viga', 'sans-serif'],
         Strait: ['Strait', 'sans-serif'],
         jetBrains: ['JetBrains Mono', 'monospace'], // Define JetBrains Mono here
+        Rubik: ['Rubik Vinyl', 'serif']
       },
       colors: {
         primary: '#1c1c22',

@@ -62,51 +62,50 @@ const About = () => {
                         </div>
                         <div className='grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 xxl:grid-cols-4 text-center gap-8'>
                             
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-html5-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>HTML5</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-css3-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>Css3</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-javascript-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>JavaScript</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-reactjs-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>ReactJS</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-nextjs-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>Next.js</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-tailwind-css-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>Tailwind</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-github-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>GitHub</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-bootstrap-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>Bootstrap</span>
                             </div>
 
-                            <div className='relative group flex flex-col items-center'>
+                            <div className=' group flex flex-col items-center'>
                                 <i className="text-gray-200 duration-300 hover:text-accent text-[30px] md:text-[50px] lg:text-[60px] xl:text-[70px] md:w-[130px] md:h-[120px] w-[90px] h-[80px] lg:w-[150px] lg:h-[140px] flex items-center justify-center bg-[#141414] rounded-lg ri-firebase-fill"></i>
                                 <span className='absolute bottom-1/2 -translate-y-14 text-[14px] md:text-[16px] lg:text-[16px] w-[60px] md:w-[100px] lg:w-[120px] left-1/2 transform -translate-x-1/2 text-center text-black font-bold px-2 bg-gray-200 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300'>Firebase</span>
                             </div>
-
                         </div>
                     </div>
                 </div>
