@@ -21,8 +21,8 @@ const ContactForm = () => {
                 <div className='flex flex-col lg:flex-row gap-14 lg:gap-12 xl:gap-24'>
                     <div className='lg:w-[50%] text-left p-5 md:p-6 lg:p-4 xl:p-8 bg-[#141414]'>
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-2 md:space-y-3 xl:space-y-6">
-                            <h1 className='text-accent font-Viga text-[20px] md:text-[20px] lg:text-[23px] xl:text-[35px] pb-2'>Let’s work together</h1>
-                            <p className="text-[14px] md:text-[16px] lg:text-[16px] pb-2 xl:text-[19px] text-gray-200">
+                            <h1 className='text-accent font-Viga text-[20px] md:text-[20px] lg:text-[23px] xl:text-[35px] lg:pb-1 pb-2'>Let’s work together</h1>
+                            <p className="text-[14px] md:text-[16px] lg:text-[14px] pb-2 xl:text-[19px] text-gray-200">
                                 Fill out the form below, and I’ll get back to you as soon as possible. Let’s make something amazing together!
                             </p>
                             <div className="flex flex-col md:flex-row gap-2 md:space-x-2 xl:space-x-4">

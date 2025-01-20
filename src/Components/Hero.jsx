@@ -19,7 +19,7 @@ const Hero = () => {
 
     return (
         <section id='home' className='bg-black border-b'>
-            <div className='container w-full gap-10 lg:gap-0 h-[120vh] lg:h-[70vh] xl:h-[100vh] pt-20 flex items-center justify-center flex-col-reverse lg:flex-row'>
+            <div className='container w-full gap-10 lg:gap-0 h-[100vh] lg:h-[70vh] xl:h-[100vh] pt-20 flex items-center justify-center flex-col-reverse lg:flex-row'>
                 {/* content */}
                 <div className='text-center lg:text-left lg:w-[50%]'>
                     <div className='text-white'>
