@@ -46,8 +46,12 @@ textarea::placeholder {
     transition: color 0.3s ease; /* Smooth transition for color changes */
 }
 
-.link:hover,
+
 .link.active {
-    color: #00e187; /* Use your accent color */
+    position: relative; /* Positioning context for the pseudo-element */
+    text-decoration: none; /* Remove the default underline */
+    color: #00cc7a; /* Text color */
 }
+
+
 

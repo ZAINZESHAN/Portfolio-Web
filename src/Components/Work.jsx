@@ -14,7 +14,7 @@ const slideData = [
   { index: '05', title: 'Frontend Project', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, labore a explicabo.', skills: 'Html 5, Css 3, Javascript' },
 ];
 
-const Projects = () => {
+const Work = () => {
   const [icon, setIcon] = useState('fa-solid fa-arrow-right-long');
   const [headingColor, setHeadingColor] = useState('white');
   const [skillColor, setSkillColor] = useState('accent');
@@ -32,7 +32,7 @@ const Projects = () => {
   };
 
   return (
-    <section id='project' className='bg-black'>
+    <section id='work' className='bg-black'>
       <div className='container py-10 text-white text-center'>
         <h1 className='font-Viga text-white pb-3 text-[30px] md:text-[40px] lg:text-[32px] xl:text-[50px]'>
           My Work
@@ -99,4 +99,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Work;

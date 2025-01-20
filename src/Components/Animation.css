@@ -17,12 +17,6 @@
 
 /*animation for links */
 
-.active{
-    /* position: relative; */
-    color: #00cc7a;
-    text-decoration: underline;
-}
-
 /* .active::after{
     content: "";
     position: absolute;
