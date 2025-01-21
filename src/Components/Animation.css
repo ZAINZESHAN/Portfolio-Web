@@ -15,6 +15,53 @@
     }
 }
 
+
+.text_typing {
+    position: relative;
+    color: transparent; /* Hide the original text */
+    -webkit-text-stroke: 0.3vw rgb(20, 19, 19); /* Add stroke effect */
+    overflow: hidden; /* Prevent overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    padding-right: 5px;
+}
+
+.text_typing::before {
+    content: attr(data-text); /* Use data-text for animation */
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 0; /* Start with 0 max-width */
+    height: 100%;
+    color: #00cc7a; /* Green text color */
+    -webkit-text-stroke: 0vw rgb(20, 19, 19); /* Remove stroke for animated text */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Prevent text overflow */
+    animation: typing 6s steps(40, end) infinite, step-end infinite;
+}
+
+
+@keyframes typing {
+    0% {
+        max-width: 0;
+    }
+    90% {
+        max-width: 100%; /* Fully reveal text */
+    }
+    100% {
+        max-width: 0; /* Reset animation */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Blinking cursor effect */
+    }
+}
+
+
+
+
+
 /*animation for links */
 
 /* .active::after{

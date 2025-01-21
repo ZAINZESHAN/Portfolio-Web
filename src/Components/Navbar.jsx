@@ -13,9 +13,9 @@ const Navbar = () => {
 
         if (header) {
             if (window.scrollY >= 100) {
-                header.classList.add("border-b", "border-[accent]");
+                header.classList.add("border-b-2", "border-[#00cc7a]");
             } else {
-                header.classList.remove("border-b", "border-[accent]");
+                header.classList.remove("border-b-2", "border-[#00cc7a]");
             }
         }
     };
@@ -28,7 +28,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <section id="navbar" className="bg-black w-full top-0 left-0 fixed">
+        <section id="navbar" className="bg-black w-full top-0 left-0 fixed z-50">
             <nav className="container text-white flex items-center h-24 sm:h-28 justify-between mx-auto">
                 <div className="flex items-center font-Viga">
                     <div className="hover:text-accent">
