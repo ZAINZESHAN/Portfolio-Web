@@ -44,7 +44,7 @@ const About = () => {
                         </h1>
                         <div className='flex flex-col gap-3 xl:gap-5'>
                             <p className='text-[14px] md:text-[16px] xl:text-[18px] text-gray-200'>
-                                My name is <span className='text_typing font-Viga text-accent text-[16px] md:text-[18px] lg:text-[20px] font-bold' data-text="Zain Zeeshan,">Zain Zeeshan,</span> and I am a passionate frontend developer
+                                My name is <span className='font-Viga text-accent text-[16px] md:text-[18px] lg:text-[20px] font-bold'>Zain Zeeshan</span>, and I am a passionate frontend developer
                                 with a solid foundation in web technologies. Over the past three
                                 years, I have honed my skills in HTML, CSS, JavaScript, and
                                 frameworks like React and Next.js. My journey in the tech world

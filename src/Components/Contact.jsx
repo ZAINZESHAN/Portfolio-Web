@@ -28,18 +28,21 @@ const ContactForm = () => {
 
 
     return (
-        <section id='contact' className='bg-black h-auto border-b'>
+        <section id='contact' className='bg-black h-auto'>
             <div className="container text-center h-auto py-10">
                 <div className='contact_heading'>
-                    <h1 className='font-Viga text-white text-[30px] md:text-[40px] lg:text-[32px] xl:text-[50px] pb-6 md:pb-10 xl:pb-16'>
+                    <h1 className='font-Viga text-white text-[30px] md:text-[40px] lg:text-[32px] xl:text-[50px]  xl:pb-3'>
                         Contact Me
                         <span className='text-4xl md:text-5xl lg:text-4xl xl:text-5xl text-accent pl-1'>
                             .
                         </span>
                     </h1>
+                    <p className='text-[14px] md:text-[16px] font-semibold lg:text-[18px] xl:text-[19px] text-gray-200 pb-6 md:pb-10 xl:pb-20'>
+                        Feel free to reach out to me for any inquiries, collaboration opportunities, or just to connect!
+                    </p>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-14 lg:gap-12 xl:gap-24'>
-                    <div className='lg:w-[50%] text-left p-5 md:p-6 lg:p-4 xl:p-8 bg-[#141414]'>
+                    <div className='contact_content lg:w-[50%] text-left p-5 md:p-6 lg:p-4 xl:p-8 bg-[#141414]'>
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-2 md:space-y-3 xl:space-y-6">
                             <h1 className='text-accent font-Viga text-[20px] md:text-[20px] lg:text-[23px] xl:text-[35px] lg:pb-1 pb-2'>Let’s work together</h1>
                             <p className="text-[14px] md:text-[16px] lg:text-[14px] pb-2 xl:text-[19px] text-gray-200">
@@ -112,7 +115,7 @@ const ContactForm = () => {
                         </form>
 
                     </div>
-                    <div className='lg:w-[50%] text-white flex flex-col justify-left justify-center gap-10'>
+                    <div className='contact_icons lg:w-[50%] text-white flex flex-col justify-left justify-center gap-10'>
                         <div className='flex gap-4 items-center'>
                             <div>
                                 <i className="text-[25px] md:text-[30px] xl:text-[40px] text-accent rounded-md bg-[#141414] p-3 ri-phone-fill"></i>
