@@ -16,9 +16,11 @@ export default {
         Viga: ['Viga', 'sans-serif'],
         Bungee: ['Bungee Outline', 'serif'],
         Strait: ['Strait', 'sans-serif'],
+        Aguafina: ["Aguafina Script", 'serif'],
         jetBrains: ['JetBrains Mono', 'monospace'], // Define JetBrains Mono here
 
       },
+      
       colors: {
         primary: '#1c1c22',
         accent: {

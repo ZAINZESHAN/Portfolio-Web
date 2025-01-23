@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
+import ScrollReveal from 'scrollreveal';
 
 const ContactForm = () => {
+
+    useEffect(() => {
+        const sr = ScrollReveal({
+            origin: 'left',
+            distance: '60px',
+            duration: 2500,
+            delay: 300,
+            reset: true
+        })
+
+        sr.reveal(`.contact_heading`, { origin: 'top' });
+        sr.reveal(`.contact_content`);
+        sr.reveal(`.contact_icons`, { origin: 'right' });
+    }, []);
+
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
@@ -9,15 +25,19 @@ const ContactForm = () => {
         // Handle form submission logic here
     };
 
+
+
     return (
         <section id='contact' className='bg-black h-auto border-b'>
             <div className="container text-center h-auto py-10">
-                <h1 className='font-Viga text-white text-[30px] md:text-[40px] lg:text-[32px] xl:text-[50px] pb-6 md:pb-10 xl:pb-16'>
-                    Contact Me
-                    <span className='text-4xl md:text-5xl lg:text-4xl xl:text-5xl text-accent pl-1'>
-                        .
-                    </span>
-                </h1>
+                <div className='contact_heading'>
+                    <h1 className='font-Viga text-white text-[30px] md:text-[40px] lg:text-[32px] xl:text-[50px] pb-6 md:pb-10 xl:pb-16'>
+                        Contact Me
+                        <span className='text-4xl md:text-5xl lg:text-4xl xl:text-5xl text-accent pl-1'>
+                            .
+                        </span>
+                    </h1>
+                </div>
                 <div className='flex flex-col lg:flex-row gap-14 lg:gap-12 xl:gap-24'>
                     <div className='lg:w-[50%] text-left p-5 md:p-6 lg:p-4 xl:p-8 bg-[#141414]'>
                         <form onSubmit={handleSubmit(onSubmit)} className="space-y-2 md:space-y-3 xl:space-y-6">

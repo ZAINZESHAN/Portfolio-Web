@@ -10,7 +10,6 @@ const Navbar = () => {
 
     const scrollHeader = () => {
         const header = document.getElementById('navbar');
-
         if (header) {
             if (window.scrollY >= 100) {
                 header.classList.add("border-b-2", "border-[#00cc7a]");
@@ -46,8 +45,9 @@ const Navbar = () => {
                         </Link>
                     </div>
                 </div>
+
                 <div
-                    className={`flex gap-10 text-[24px] lg:text-[21px] xl:text-[23px] font-semibold absolute top-0 min-h-[85vh] w-full 
+                    className={`flex gap-10 text-[24px] lg:text-[21px] xl:text-[23px] font-semibold absolute top-0 min-h-[85vh] w-full
                     backdrop-blur-sm items-center justify-center flex-col 
                     duration-500 ease-in-out transition-all overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:flex-row lg:w-auto ${isOpen ? 'left-0' : '-left-full'
                         }`}
@@ -95,7 +95,6 @@ const Navbar = () => {
                         className="link cursor-pointer hover:text-accent"
                     >
                         Contact
-
                     </Link>
                 </div>
 
