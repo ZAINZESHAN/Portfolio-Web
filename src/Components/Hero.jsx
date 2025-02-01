@@ -20,7 +20,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="home" className="bg-black">
+        <section id="home" className="bg-black w-full">
             <div className="container relative w-full gap-10 lg:gap-0 lg:h-[60vh] xl:h-[81vh] pt-20 md:pt-8 lg:pt-0 flex items-center justify-center flex-col-reverse lg:flex-row mt-8 sm:mt-16 md:mt-24 xl:-mt-[]">
                 {/* Content */}
                 <div className="home_data text-center lg:text-left lg:w-[50%]">

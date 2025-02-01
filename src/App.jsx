@@ -6,6 +6,7 @@ import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import Work from "./Components/Work";
 import Loader from './Components/Loader';
+import Footer from './Components/Footer';
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
                     <About />
                     <Work />
                     <Contact />
+                    <Footer/>
                 </>
             )}
         </>

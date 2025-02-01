@@ -53,7 +53,7 @@ const Work = () => {
   return (
     <section id='work' className='bg-black'>
       <div className='container py-10 text-white'>
-        <div className='container py-10 text-white text-center'>
+        <div className='text-center'>
           <div className='work_heading'>
             <h1 className='font-Viga text-white pb-3 text-[30px] md:text-[40px] lg:text-[32px] xl:text-[50px]'>
               My Work

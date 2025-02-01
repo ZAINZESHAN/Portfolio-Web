@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import ScrollReveal from 'scrollreveal';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+
 
 const ContactForm = () => {
 
@@ -18,12 +21,32 @@ const ContactForm = () => {
         sr.reveal(`.contact_icons`, { origin: 'right' });
     }, []);
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
     const onSubmit = (data) => {
-        console.log(data);
-        // Handle form submission logic here
+        const serviceID = "service_eibjnsf";  // Your EmailJS service ID
+        const templateID = "template_vfazh6s"; // Your EmailJS template ID
+        const publicKey = "c9JOSnQdN_jBACtrO"; // Your EmailJS public key
+
+        const emailParams = {
+            to_name: 'Zain Zeeshan', // Replace with your name or company name
+            from_name: data.firstName + ' ' + data.secondName, // Full name from form
+            from_email: data.email, // User's email
+            message: data.message // User's message
+        };
+
+        emailjs.send(serviceID, templateID, emailParams, publicKey)
+            .then(() => {
+                toast.success("Message sent successfully!");
+                reset(); // Reset form after successful submission
+            })
+            .catch((error) => {
+                console.error("Error sending email:", error);
+                toast.error("Failed to send message. Please try again later.");
+            });
+
     };
+
 
 
 
@@ -55,7 +78,7 @@ const ContactForm = () => {
                                         type="text"
                                         placeholder={`Firstname`}
                                         {...register('firstName', { required: true })}
-                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[20px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.firstName ? 'border-red-500' : 'border-none'}`}
+                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[15px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.firstName ? 'border-red-500' : 'border-none'}`}
                                     />
                                     {errors.firstName && <p className="text-red-500 pt-2 text-xs">First name is required</p>}
                                 </div>
@@ -66,7 +89,7 @@ const ContactForm = () => {
                                         type="text"
                                         placeholder="Lastname"
                                         {...register('secondName', { required: true })}
-                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[20px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.secondName ? 'border-red-500' : 'border-none'}`}
+                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[15px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.secondName ? 'border-red-500' : 'border-none'}`}
                                     />
                                     {errors.secondName && <p className="text-red-500 pt-2 text-xs">Second name is required</p>}
                                 </div>
@@ -79,7 +102,7 @@ const ContactForm = () => {
                                         type="email"
                                         placeholder="Email Address"
                                         {...register('email', { required: true })}
-                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[20px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.email ? 'border-red-500' : 'border-none'}`}
+                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[15px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.email ? 'border-red-500' : 'border-none'}`}
                                     />
                                     {errors.email && <p className="text-red-500 pt-2 text-xs">Email is required</p>}
                                 </div>
@@ -90,7 +113,7 @@ const ContactForm = () => {
                                         type="tel"
                                         placeholder="Phone Number"
                                         {...register('phone', { required: true })}
-                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[20px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.phone ? 'border-red-500' : 'border-none'}`}
+                                        className={`bg-black block text-[15px] md:text-[17px] lg:text-[15px]  w-full text-gray-200 border rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.phone ? 'border-red-500' : 'border-none'}`}
                                     />
                                     {errors.phone && <p className="text-red-500 pt-2 text-xs">Phone number is required</p>}
                                 </div>
@@ -101,7 +124,7 @@ const ContactForm = () => {
                                 <textarea
                                     placeholder="Type your message here"
                                     {...register('message', { required: true })}
-                                    className={`bg-black block text-[15px] md:text-[17px] lg:text-[20px]  w-full text-gray-200 border mb-2 rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.message ? 'border-red-500' : 'border-none'}`}
+                                    className={`bg-black block text-[15px] md:text-[17px] lg:text-[15px]  w-full text-gray-200 border mb-2 rounded-md px-2 py-3 md:py-4 xl:py-5 ${errors.message ? 'border-red-500' : 'border-none'}`}
                                     rows="6"
                                 />
                                 {errors.message && <p className="text-red-500 text-xs">Message is required</p>}
