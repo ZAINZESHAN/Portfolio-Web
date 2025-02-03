@@ -64,7 +64,6 @@ const Work = () => {
 
     sr.reveal(`.work_heading`, { origin: 'top' });
     sr.reveal(`.work_content`);
-    sr.reveal(`.work_image`, { origin: 'right' });
   }, []);
 
   return (
@@ -100,7 +99,7 @@ const Work = () => {
               slidesPerView={1}
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
-              className='p-32'
+              className='p-32 work_content'
             >
               {slideData.map(({ index, title, description, skills, img, githubLink }) => (
                 <SwiperSlide key={index} className='pb-1 lg:pb-10 xl:pb-14 relative'>
@@ -109,18 +108,14 @@ const Work = () => {
                       <h1 className='text-[40px] md:text-[50px] lg:text-[50px] xl:text-[70px] font-Bungee'>
                         {index}
                       </h1>
-                      <h1
-                        className={`font-Viga text-${headingColor} text-[26px] md:text-[30px] lg:text-[25px] xl:text-[45px] mt-0 lg:mt-[-10px] lg:pb-[6px] xl:pb-[10px]`}
-                      >
+                      <h1 className={`font-Viga text-${headingColor} text-[26px] md:text-[30px] lg:text-[25px] xl:text-[45px] mt-0 lg:mt-[-10px] lg:pb-[6px] xl:pb-[10px]`}>
                         {title}
                         <span className='text-3xl md:text-4xl lg:text-3xl xl:text-5xl text-accent pl-1'>.</span>
                       </h1>
                       <p className='text-[12px] md:text-[14px] lg:text-[12px] xl:text-[14px] text-[#8c8b8b] pt-1 pb-[14px] xl:pb-[22px]'>
                         {description}
                       </p>
-                      <h3
-                        className={`text-${skillColor} text-[14px] md:text-[16px] lg:text-[14px] xl:text-[16px] font-bold xl:pb-2`}
-                      >
+                      <h3 className={`text-${skillColor} text-[14px] md:text-[16px] lg:text-[14px] xl:text-[16px] font-bold xl:pb-2`}>
                         {skills}
                       </h3>
                       <hr className='border-t-2 border-[#2b2b2b] mt-4 lg:mb-2 xl:mb-7' />

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import frontend from '../assets/frontend.jfif';
 import ScrollReveal from 'scrollreveal';
 import './Animation.css'; // Importing the CSS file for the animation
-import Resume from '../assets/GYM ROUTINE.pdf';
+import Resume from '../assets/Resume.pdf';
 
 const Hero = () => {
 
