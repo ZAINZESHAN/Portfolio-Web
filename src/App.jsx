@@ -24,12 +24,12 @@ function App() {
                 <Loader/> // Show loader while loading
             ) : (
                 <>
-                    <Navbar />
+                    {/* <Navbar /> */}
                     <Hero />
                     <About />
-                    {/* <Work />
+                    <Work />
                     <Contact />
-                    <Footer/> */}
+                    <Footer/>
                 </>
             )}
         </>
