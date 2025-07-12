@@ -17,26 +17,26 @@ const Footer = () => {
         sr.reveal(`.footert_icons`, { origin: 'right' });
     }, []);
 
-    // const scrollUp = () => {
-    //     const scrollBtn = document.getElementById('scroll-up');
+    const scrollUp = () => {
+        const scrollBtn = document.getElementById('scroll-up');
 
-    //     if (scrollBtn) {
-    //         if (window.scrollY >= 250) {
-    //             scrollBtn.classList.remove("-bottom-1/2");
-    //             scrollBtn.classList.add("bottom-4");
-    //         } else {
-    //             scrollBtn.classList.add("-bottom-1/2");
-    //             scrollBtn.classList.remove("bottom-4");
-    //         }
-    //     }
-    // };
+        if (scrollBtn) {
+            if (window.scrollY >= 250) {
+                scrollBtn.classList.remove("-bottom-1/2");
+                scrollBtn.classList.add("bottom-4");
+            } else {
+                scrollBtn.classList.add("-bottom-1/2");
+                scrollBtn.classList.remove("bottom-4");
+            }
+        }
+    };
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', scrollUp);
-    //     return () => {
-    //         window.removeEventListener('scroll', scrollUp);
-    //     };
-    // }, []);
+    useEffect(() => {
+        window.addEventListener('scroll', scrollUp);
+        return () => {
+            window.removeEventListener('scroll', scrollUp);
+        };
+    }, []);
 
     return (
         <section id='footer' className='bg-black'>
@@ -64,13 +64,13 @@ const Footer = () => {
                     © 2025 Zain Zeeshan. All rights reserved.
                 </p>
             </div>
-            {/* <a
+            <a
                 onClick={scrollUp}
                 href='#'
                 className='fixed right-4 -bottom-1/2 bg-accent hover:bg-accent shadow-sm inline-block
                 px-3 py-1 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300'
                 id='scroll-up'>
-                <i className="ri-arrow-up-double-line text-2xl xl:text-3xl"></i>            </a> */}
+                <i className="ri-arrow-up-double-line text-2xl xl:text-3xl"></i>            </a>
         </section>
     );
 };
